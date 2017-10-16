@@ -10,9 +10,9 @@ install:
 
 script:
   # Validate schama-salad-tool
-  - schema-salad-tool /home/travis/virtualenv/python2.7.13/lib/python2.7/site-packages/cwltool/schemas/v1.0/CommandLineTool-standalone.yml hello.cwl
-  - schema-salad-tool /home/travis/virtualenv/python2.7.13/lib/python2.7/site-packages/cwltool/schemas/v1.0/CommandLineTool-standalone.yml grep.cwl
-  - schema-salad-tool /home/travis/virtualenv/python2.7.13/lib/python2.7/site-packages/cwltool/schemas/v1.0/CommandLineTool-standalone.yml wc.cwl
-  - schema-salad-tool /home/travis/virtualenv/python2.7.13/lib/python2.7/site-packages/cwltool/schemas/v1.0/Workflow.yml grep-and-count.cwl
+  - schema-salad-tool /home/travis/virtualenv/python2.7.13/lib/python2.7/site-packages/cwltool/schemas/v1.0/CommonWorkflowLanguage.yml hello.cwl
+  - schema-salad-tool /home/travis/virtualenv/python2.7.13/lib/python2.7/site-packages/cwltool/schemas/v1.0/CommonWorkflowLanguage.yml grep.cwl
+  - schema-salad-tool /home/travis/virtualenv/python2.7.13/lib/python2.7/site-packages/cwltool/schemas/v1.0/CommonWorkflowLanguage.yml wc.cwl
+  - schema-salad-tool /home/travis/virtualenv/python2.7.13/lib/python2.7/site-packages/cwltool/schemas/v1.0/CommonWorkflowLanguage.yml grep-and-count.cwl
   # test result output
   - cwltool hello.cwl  --message "hello world"
