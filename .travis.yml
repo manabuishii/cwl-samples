@@ -7,6 +7,7 @@ install:
   - pip install cwlref-runner
   - pip install cwltool
   - pip install cwl-runner
+  - find /home/travis/virtualenv/python2.7.13 | grep CommandLineTool-standalone.yml
 
 script:
-  - schema-salad-tool /home/travis/virtualenv/python2.7.13/lib/python2.7/dist-packages/cwltool/schemas/v1.0/CommandLineTool-standalone.yml hello.cwl
+  - schema-salad-tool /home/travis/virtualenv/python2.7.13/lib/python2.7/site-packages/cwltool/schemas/v1.0/CommandLineTool-standalone.yml hello.cwl
