@@ -1,5 +1,5 @@
-class: CommandLineTool
 cwlVersion: v1.0
+class: CommandLineTool
 
 stdout: wcout.txt
 
