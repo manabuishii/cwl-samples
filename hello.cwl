@@ -6,4 +6,9 @@ inputs:
     type: string
     inputBinding:
       position: 1
-outputs: []
+outputs:
+  hello_output:
+    type: File
+    outputBinding:
+      glob: hello-out.txt
+stdout: hello-out.txt
