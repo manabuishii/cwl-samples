@@ -1,3 +1,9 @@
+[![Build Status](https://travis-ci.org/manabuishii/cwl-samples.svg?branch=master)](https://travis-ci.org/manabuishii/cwl-samples)
+
+
+
+# HOW TO EXECUTE
+
 ```
 cwltool grep-and-count.cwl --file_to_searc mock.txt --pattern one
 ```
