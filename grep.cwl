@@ -10,3 +10,4 @@ inputs:
     inputBinding: {position: 1}
 outputs:
   results: stdout
+stdout: grep-out.txt
