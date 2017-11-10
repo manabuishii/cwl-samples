@@ -1,6 +1,6 @@
 cwlVersion: v1.0
 class: CommandLineTool
-
+baseCommand: grep
 inputs:
   pattern:
     type: string
@@ -8,8 +8,5 @@ inputs:
   file_to_searc:
     type: File
     inputBinding: {position: 1}
-
 outputs:
   results: stdout
-
-baseCommand: grep
