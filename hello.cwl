@@ -4,8 +4,7 @@ baseCommand: echo
 inputs:
   message:
     type: string
-    inputBinding:
-      position: 1
+    inputBinding: {}
 outputs:
   hello_output:
     type: File
