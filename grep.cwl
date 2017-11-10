@@ -5,7 +5,7 @@ inputs:
   pattern:
     type: string
     inputBinding: {position: 0}
-  file_to_searc:
+  file_to_search:
     type: File
     inputBinding: {position: 1}
 outputs:
