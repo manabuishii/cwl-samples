@@ -2,7 +2,7 @@ cwlVersion: v1.0
 class: Workflow
 inputs:
   pattern: string
-  file_to_searc: File
+  file_to_search: File
 outputs:
   results:
     type: File
@@ -15,7 +15,7 @@ steps:
     run: grep.cwl
     in:
       pattern: pattern
-      file_to_searc: file_to_searc
+      file_to_search: file_to_search
     out: [results]
   wc:
     run: wc.cwl
