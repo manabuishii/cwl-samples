@@ -4,10 +4,10 @@ baseCommand: echo
 inputs:
   message:
     type: string
-    inputBinding: {}
+    inputBinding:
+      position: 1
 outputs:
-  hello_output:
-    type: File
-    outputBinding:
-      glob: hello-out.txt
+ hello_output:
+   type: stdout
 stdout: hello-out.txt
+
