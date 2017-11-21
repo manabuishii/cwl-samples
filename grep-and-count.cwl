@@ -4,9 +4,6 @@ inputs:
   pattern: string
   file_to_search: File # file_to_searchは、こちらで決めた名前である。
 outputs:
-  results:
-    type: File
-    outputSource: grep/results
   counts:
     type: File
     outputSource: wc/counts
