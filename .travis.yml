@@ -15,7 +15,7 @@ script:
   - schema-salad-tool /home/travis/virtualenv/python2.7.13/lib/python2.7/site-packages/cwltool/schemas/v1.0/CommonWorkflowLanguage.yml wc.cwl
   - schema-salad-tool /home/travis/virtualenv/python2.7.13/lib/python2.7/site-packages/cwltool/schemas/v1.0/CommonWorkflowLanguage.yml grep-and-count.cwl
   # test result output
-  - cwltool helloworld.cwl  --message "hello world" ; grep "Hello World" hello-out.txt
+  - cwltool helloworld.cwl  --message "Hello World" ; grep "Hello World" hello-out.txt
   # Workflow
   - cwltool grep-and-count.cwl --file_to_searc mock.txt --pattern one ;   awk '{print $1}' wcout.txt  | grep 2
   - cwltool grep-and-count.cwl --file_to_searc mock2.txt --pattern one ;   awk '{print $1}' wcout.txt  | grep 3
