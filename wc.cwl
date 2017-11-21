@@ -2,10 +2,11 @@ cwlVersion: v1.0
 class: CommandLineTool
 baseCommand: [wc, -l]
 inputs:
-  files:
+  file:
     type: File
-    inputBinding: {position: 1}
-    streamable: true
+    inputBinding:
+      position: 1
 outputs:
   counts: stdout
 stdout: wcout.txt
+

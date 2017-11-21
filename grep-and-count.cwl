@@ -2,7 +2,7 @@ cwlVersion: v1.0
 class: Workflow
 inputs:
   pattern: string
-  file_to_search: File
+  file_to_search: File # file_to_searchは、こちらで決めた名前である。
 outputs:
   results:
     type: File
@@ -20,5 +20,6 @@ steps:
   wc:
     run: wc.cwl
     in:
-      files: grep/results
+      file: grep/results
     out: [counts]
+

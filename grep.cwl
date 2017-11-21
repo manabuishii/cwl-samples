@@ -4,10 +4,13 @@ baseCommand: grep
 inputs:
   pattern:
     type: string
-    inputBinding: {position: 0}
+    inputBinding:
+      position: 0
   file_to_search:
     type: File
-    inputBinding: {position: 1}
+    inputBinding:
+      position: 1
 outputs:
   results: stdout
-stdout: grep-out.txt
+stdout: grepout.txt
+
