@@ -1,8 +1,10 @@
 cwlVersion: v1.0
 class: Workflow
 inputs:
-  pattern: string
-  file_to_search: File # file_to_searchは、こちらで決めた名前である。
+  grep_pattern:
+    type: string
+  target_file:
+    type: File
 outputs:
   counts:
     type: File
@@ -11,8 +13,8 @@ steps:
   grep:
     run: grep.cwl
     in:
-      pattern: pattern
-      file_to_search: file_to_search
+      pattern: grep_pattern
+      file_to_search: target_file
     out: [results]
   wc:
     run: wc.cwl
