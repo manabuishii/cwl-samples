@@ -5,7 +5,7 @@ inputs:
   message:
     type: string
     inputBinding:
-      position: 1
+      position: 0
 outputs:
  hello_output:
    type: stdout
