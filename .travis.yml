@@ -7,7 +7,7 @@ install:
   - pip install cwlref-runner
   - pip install cwltool
   - pip install cwl-runner
-  - find /home/travis/ | grep CommandLineTool-standalone.yml
+  - find /home/travis/ | grep CommonWorkflowLanguage.yml
 
 script:
   # Validate schama-salad-tool
