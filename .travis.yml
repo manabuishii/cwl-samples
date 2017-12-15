@@ -8,7 +8,8 @@ install:
   - pip install cwltool
   - pip install cwl-runner
   - ls -lar
-  - find /usr/lib | grep CommonWorkflowLanguage.yml
+  #- find /home/travis | gre
+  #- find /usr/lib | grep CommonWorkflowLanguage.yml
 
 script:
   # Validate schama-salad-tool
