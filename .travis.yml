@@ -7,12 +7,10 @@ install:
   - pip install cwlref-runner
   - pip install cwltool
   - pip install cwl-runner
-  - ls -lar
-  #- find /home/travis | gre
-  #- find /usr/lib | grep CommonWorkflowLanguage.yml
 
 script:
   # Validate schama-salad-tool
+  # if error happens check python version at travis console.
   - schema-salad-tool /home/travis/virtualenv/python2.7.14/lib/python2.7/site-packages/cwltool/schemas/v1.0/CommonWorkflowLanguage.yml helloworld.cwl
   - schema-salad-tool /home/travis/virtualenv/python2.7.14/lib/python2.7/site-packages/cwltool/schemas/v1.0/CommonWorkflowLanguage.yml grep.cwl
   - schema-salad-tool /home/travis/virtualenv/python2.7.14/lib/python2.7/site-packages/cwltool/schemas/v1.0/CommonWorkflowLanguage.yml wc.cwl
