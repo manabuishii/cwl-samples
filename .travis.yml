@@ -1,7 +1,7 @@
 language: python
 
 python:
-  - "2.7"
+  - "3.6"
 
 install:
   - pip install cwlref-runner
@@ -11,10 +11,10 @@ install:
 script:
   # Validate schama-salad-tool
   # if error happens check python version at travis console.
-  - schema-salad-tool /home/travis/virtualenv/python2.7.14/lib/python2.7/site-packages/cwltool/schemas/v1.0/CommonWorkflowLanguage.yml helloworld.cwl
-  - schema-salad-tool /home/travis/virtualenv/python2.7.14/lib/python2.7/site-packages/cwltool/schemas/v1.0/CommonWorkflowLanguage.yml grep.cwl
-  - schema-salad-tool /home/travis/virtualenv/python2.7.14/lib/python2.7/site-packages/cwltool/schemas/v1.0/CommonWorkflowLanguage.yml wc.cwl
-  - schema-salad-tool /home/travis/virtualenv/python2.7.14/lib/python2.7/site-packages/cwltool/schemas/v1.0/CommonWorkflowLanguage.yml grep-and-count.cwl
+  - cwltool --validate helloworld.cwl
+  - cwltool --validate grep.cwl
+  - cwltool --validate wc.cwl
+  - cwltool --validate grep-and-count.cwl
   # test result output
   - cwltool helloworld.cwl  --message "Hello World" ; grep "Hello World" hello-out.txt
   # Workflow
