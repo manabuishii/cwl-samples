@@ -1,10 +1,8 @@
 [![Build Status](https://travis-ci.org/manabuishii/cwl-samples.svg?branch=master)](https://travis-ci.org/manabuishii/cwl-samples)
 
-
-
 # HOW TO EXECUTE
 
-```
+```console
 cwltool grep-and-count.cwl --file_to_searc mock.txt --pattern one
 ```
 
@@ -12,14 +10,14 @@ cwltool grep-and-count.cwl --file_to_searc mock.txt --pattern one
 
 ## CommandLineTool
 
-```
-schema-salad-tool /usr/local/lib/python2.7/dist-packages/cwltool/schemas/v1.0/CommandLineTool-standalone.yml hello.cwl
-schema-salad-tool /usr/local/lib/python2.7/dist-packages/cwltool/schemas/v1.0/CommandLineTool-standalone.yml grep.cwl
-schema-salad-tool /usr/local/lib/python2.7/dist-packages/cwltool/schemas/v1.0/CommandLineTool-standalone.yml wc.cwl
+```console
+cwltool --validate helloworld.cwl
+cwltool --validate grep.cwl
+cwltool --validate wc.cwl
 ```
 
 ## Workflow
 
-```
-schema-salad-tool /usr/local/lib/python2.7/dist-packages/cwltool/schemas/v1.0/Workflow.yml grep-and-count.cwl
+```console
+cwltool --validate grep-and-count.cwl
 ```
